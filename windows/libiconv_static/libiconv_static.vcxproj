@@ -32,8 +32,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\lib\localcharset.h" />
-    <ClInclude Include="config.h" />
-    <ClInclude Include="iconv.h" />
+    <ClInclude Include="..\include\config.h" />
+    <ClInclude Include="..\include\iconv.h" />
     <ClInclude Include="libcharset.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -108,7 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>HAVE_CONFIG_H;ENABLE_RELOCATABLE=1;IN_LIBRARY;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.;..\..\include;..\..\lib;..\..\srclib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\include;..\..\include;..\..\lib;..\..\srclib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -140,7 +140,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>HAVE_CONFIG_H;ENABLE_RELOCATABLE=1;IN_LIBRARY;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>.;..\..\include;..\..\lib;..\..\srclib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\include;..\..\include;..\..\lib;..\..\srclib</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

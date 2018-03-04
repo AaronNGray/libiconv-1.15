@@ -23,10 +23,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="config.h">
+    <ClInclude Include="..\include\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="iconv.h">
+    <ClInclude Include="..\include\iconv.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
