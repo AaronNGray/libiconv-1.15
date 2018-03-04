@@ -23,7 +23,11 @@
 #define _LIBICONV_VERSION 0x010F    /* version number: (major<<8) + minor */
 
 #if 1 && BUILDING_LIBICONV
-#define LIBICONV_DLL_EXPORTED __attribute__((__visibility__("default")))
+#ifdef _WIN32
+# define LIBICONV_DLL_EXPORTED __declspec(dllexport)
+#else
+# define LIBICONV_DLL_EXPORTED __attribute__((__visibility__("default")))
+#endif
 #else
 #define LIBICONV_DLL_EXPORTED
 #endif
@@ -61,7 +65,7 @@ typedef void* iconv_t;
    have EILSEQ in a different header.  On these systems, define EILSEQ
    ourselves. */
 #ifndef EILSEQ
-#define EILSEQ 
+#define EILSEQ
 #endif
 
 
